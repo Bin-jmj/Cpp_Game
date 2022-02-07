@@ -9,7 +9,7 @@ void TOH(int n,char Sour, char Aux,char Des)
 		cout<<"Move Disk "<<n<<" from "<<Sour<<" to "<<Des<<endl;
 		return;
 	}
-	
+	// this for take the space to make change of the disk
 	TOH(n-1,Sour,Des,Aux);
 	cout<<"Move Disk "<<n<<" from "<<Sour<<" to "<<Des<<endl;
 	TOH(n-1,Aux,Sour,Des);
